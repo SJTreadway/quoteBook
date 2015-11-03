@@ -1,7 +1,9 @@
 (function() {
 
-angular.module('quoteBook')
+angular.module('quoteBook', ['ngCookies'])
 	   .controller('mainCtrl'
+	   // , ['$cookies', function($cookies){
+	   // 		$cookies.getAll();}]
 	   , function($scope, dataService) {
 
 	   		$scope.addQuote = {text: ''};

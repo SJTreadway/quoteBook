@@ -19,7 +19,8 @@ angular.module('quoteBook')
 			};
 
 			this.addData = function(input){
-					quotes.push(input);
+				input.author = 'Unknown Author';
+				quotes.push(input);
 			};
 
 			this.removeData = function(input){
