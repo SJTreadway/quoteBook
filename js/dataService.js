@@ -30,7 +30,6 @@ angular.module('quoteBook')
 
 
 			this.addData = function(input){
-				input.author = 'Unknown Author';
 				serviceQuotes.push(input);
 				sendToLocal();
 			};

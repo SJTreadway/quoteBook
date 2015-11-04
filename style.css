@@ -2,3 +2,16 @@ body {
 	background-color: limegreen;
 	color: white;
 }
+
+.input {
+	display: inline-block;
+	margin: 20px 0 50px 30px;
+}
+
+.first {
+	margin-left: 0;
+}
+
+input {
+	width: 200px;
+}
