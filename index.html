@@ -23,12 +23,12 @@
 
 			<div class='input'>
 				<input type='text' ng-model="removeQuote" placeholder="Type Quote to Remove">
-				<button ng-click="removeData()" class='btn-primary'>Remove Quote</button>
+				<button ng-click="removeData()" class='btn-primary'>REMOVE</button>
 			</div>
 
 			<div class='input'>
 				<input type='text' ng-model="filterQuote" placeholder="Filter">
-				<button class='btn-primary'>Filter Quotes</button>
+				<button class='btn-primary'>FILTER</button>
 			</div>
 	
 		<div ng-repeat="data in getData | filter: filterQuote">
