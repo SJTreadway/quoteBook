@@ -23,13 +23,12 @@
 		<button class='btn-primary' ng-click="inputForm2 = !inputForm2">Remove</button>
 
 		<form ng-show='inputForm3'>
-			<input type='text' ng-model="filterQuote.text">
+			<input type='text' ng-model="filterQuote">
 			<button>Filter Quotes</button>
 		</form>
 		<button class='btn-primary' ng-click="inputForm3 = !inputForm3">Filter</button>
 
-
-	<div ng-repeat="data in getData | filter: filterQuote.text">
+	<div ng-repeat="data in getData | filter: filterQuote">
 			<p>{{data.text}}</p>
 			<p>{{data.author}}</p>
 			<hr>
@@ -37,8 +36,7 @@
 
 </body>
 
-	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.js"></script>
-	<script type="text/javascript" src="https://code.angularjs.org/1.4.7/angular-cookies.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.js"></script>
 	<script type="text/javascript" src="js/app.js"></script>
 	<script type="text/javascript" src="js/mainCtrl.js"></script>
 	<script type="text/javascript" src="js/dataService.js"></script>
