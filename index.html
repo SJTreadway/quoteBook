@@ -10,8 +10,9 @@
 
 	<div class="container">
 
-		<h1 class="text-center">Quotes</h1>
-		<h3 class="text-center">Life Lessons</h3>
+		<div class='header'>
+			<h1 class="text-center">Quotes</h1>
+			<h3 class="text-center">Life Lessons</h3>
 
 			<div class='input first'>
 				<input type='text' ng-model="addQuote.text" placeholder="Quote">
@@ -30,8 +31,9 @@
 				<input type='text' ng-model="filterQuote" placeholder="Filter">
 				<button class='btn-primary'>FILTER</button>
 			</div>
+		</div>
 	
-		<div ng-repeat="data in getData | filter: filterQuote">
+		<div class="quotes" ng-repeat="data in getData | filter: filterQuote">
 				<p class="lead">{{data.text}}</p>
 				<p class="lead">{{data.author}}</p>
 				<hr>
